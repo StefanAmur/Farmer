@@ -134,11 +134,108 @@ body {
   font-weight: 400;
   max-width: 90%;
   margin: 0 auto;
+  padding: 2rem 0;
   background-image: url(img/background.jpg);
+  background-color: #fff; /* just in case the image doesn't load */
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: cover;
-  background-color: #fff; /* just in case the image doesn't load */
+}
+
+.main-container {
+  margin-bottom: 4rem;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-main {
+  margin-bottom: 4rem;
+}
+
+.image {
+  height: 20rem;
+  float: left;
+  margin: 1rem 2rem 1rem 0;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.story {
+  text-indent: 4rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.links-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links:link,
+.links:visited {
+  background-color: #01aa17;
+  border-radius: 5px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.links:hover,
+.links:active {
+  background-color: #009714;
+}
+
+.table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  min-width: 40vw;
+}
+
+.tabel-caption {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+.table tbody tr {
+  background-color: #aaaaaa;
+  color: #ffffff;
+  text-align: center;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #fff;
+  color: #333;
+}
+
+.good {
+  text-transform: capitalize;
+  color: #004a00;
+}
+
+.bad {
+  text-transform: capitalize;
+  color: red;
 }
 
 [data-tooltip]:before {
@@ -149,15 +246,27 @@ body {
   padding: 10px;
   color: #333;
   border-radius: 10px;
-  box-shadow: 2px 2px 1px silver;
+  box-shadow: 2px 2px 1px rgb(189, 189, 189);
 }
 
 [data-tooltip]:hover:before {
   opacity: 1;
   background: rgb(253, 253, 72);
+  border: 1px solid #333;
   margin-top: -50px;
   margin-left: 20px;
 }
 [data-tooltip]:not([data-tooltip-persistent]):before {
   pointer-events: none;
+}
+
+q {
+  font-style: italic;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
 }
