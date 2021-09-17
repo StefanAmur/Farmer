@@ -238,6 +238,10 @@ td {
   color: red;
 }
 
+/* I may have over engineered the "Find the attribute to display a small text box when hovering over links", sorry. :/
+the attribute is "title" but that was a bit slow when hovering the mouse over it so I went with this solution.
+*/
+
 [data-tooltip]:before {
   position: absolute;
   content: attr(data-tooltip);
@@ -253,8 +257,8 @@ td {
   opacity: 1;
   background: rgb(253, 253, 72);
   border: 1px solid #333;
-  margin-top: -50px;
-  margin-left: 20px;
+  margin-top: -5rem;
+  margin-left: 2rem;
 }
 [data-tooltip]:not([data-tooltip-persistent]):before {
   pointer-events: none;
